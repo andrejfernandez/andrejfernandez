@@ -1,6 +1,7 @@
 // Components
 import GlobalStyle from "./Components/GlobalStyle";
 import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
 
 // Pages
 import Home from "./Pages/Home";
@@ -39,6 +40,7 @@ function App() {
           </Switch>
         </MainWrapper>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

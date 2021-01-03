@@ -19,12 +19,7 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <NavLink
-            className="icon"
-            id="Home"
-            to="/Home"
-            activeStyle={selected1}
-          >
+          <NavLink to="/Home" activeClassName="Home">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faHome} size="1x" />
               <h4>Home</h4>
@@ -32,12 +27,7 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            className="icon"
-            id="AboutMe"
-            to="/AboutMe"
-            activeStyle={selected2}
-          >
+          <NavLink to="/AboutMe" activeClassName="AboutMe">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faUser} size="1x" />
               <h4>About Me</h4>
@@ -45,12 +35,7 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            className="icon"
-            id="Projects"
-            to="/Projects"
-            activeStyle={selected3}
-          >
+          <NavLink to="/Projects" activeClassName="Projects">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faCode} size="1x" />
               <h4>Projects</h4>
@@ -58,12 +43,7 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            className="icon"
-            id="Contact"
-            to="/Contact"
-            activeStyle={selected4}
-          >
+          <NavLink to="/Contact" activeClassName="Contact">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faEnvelope} size="1x" />
               <h4>Contact</h4>
@@ -76,28 +56,6 @@ const Nav = () => {
 };
 
 // Styling
-
-const selected1 = {
-  background: "#161616",
-  borderRadius: "20em",
-  color: "#fcfd01",
-};
-const selected2 = {
-  background: "#161616",
-  borderRadius: "20em",
-  color: "#01fffc",
-};
-const selected3 = {
-  background: "#161616",
-  borderRadius: "20em",
-  color: "#00fe00",
-};
-const selected4 = {
-  background: "#161616",
-  borderRadius: "20em",
-  color: "#ff02fb",
-};
-
 const StyledNav = styled.nav`
   min-height: 8vh;
   display: flex;
@@ -145,18 +103,35 @@ const StyledNav = styled.nav`
     a {
       background: #161616;
       border-radius: 20em;
-      color: #23d997;
     }
-    #Home {
+  }
+
+  // Active classes
+  .Home {
+    background: #161616;
+    border-radius: 20em;
+    .icon {
       color: #fcfd01;
     }
-    #AboutMe {
+  }
+  .AboutMe {
+    background: #161616;
+    border-radius: 20em;
+    .icon {
       color: #01fffc;
     }
-    #Projects {
+  }
+  .Projects {
+    background: #161616;
+    border-radius: 20em;
+    .icon {
       color: #00fe00;
     }
-    #Contact {
+  }
+  .Contact {
+    background: #161616;
+    border-radius: 20em;
+    .icon {
       color: #ff02fb;
     }
   }
