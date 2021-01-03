@@ -19,9 +19,9 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <ContentWrapper>
+      <MainWrapper>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/Home" exact>
             <Home />
           </Route>
           <Route path="/AboutMe" exact>
@@ -34,14 +34,13 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      </ContentWrapper>
+      </MainWrapper>
     </div>
   );
 }
 
-const ContentWrapper = styled.div`
-  margin-left: 5rem;
-  color: white;
-`;
-
 export default App;
+
+const MainWrapper = styled.div`
+  margin-top: 1rem;
+`;

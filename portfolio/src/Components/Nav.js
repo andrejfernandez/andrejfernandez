@@ -1,6 +1,6 @@
 // Dependencies
 import styled from "styled-components";
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -8,57 +8,161 @@ import {
   faCode,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const { pathname } = useLocation();
+
   return (
     <StyledNav>
+      <h1>
+        <NavLink id="logo" to="/">
+          {""}
+        </NavLink>
+      </h1>
       <ul>
         <li>
-          <Link to="/">
-            <FontAwesomeIcon icon={faHome} size="2x" />
-          </Link>
+          <NavLink
+            className="icon"
+            id="Home"
+            to="/Home"
+            activeStyle={selected1}
+          >
+            <div className="content-wrapper">
+              <FontAwesomeIcon className="icon" icon={faHome} size="1x" />
+              <h4>Home</h4>
+            </div>
+          </NavLink>
         </li>
         <li>
-          <Link to="/AboutMe">
-            <FontAwesomeIcon icon={faUser} size="2x" />
-          </Link>
+          <NavLink
+            className="icon"
+            id="AboutMe"
+            to="/AboutMe"
+            activeStyle={selected2}
+          >
+            <div className="content-wrapper">
+              <FontAwesomeIcon className="icon" icon={faUser} size="1x" />
+              <h4>About Me</h4>
+            </div>
+          </NavLink>
         </li>
         <li>
-          <Link to="/Projects">
-            <FontAwesomeIcon icon={faCode} size="2x" />
-          </Link>
+          <NavLink
+            className="icon"
+            id="Projects"
+            to="/Projects"
+            activeStyle={selected3}
+          >
+            <div className="content-wrapper">
+              <FontAwesomeIcon className="icon" icon={faCode} size="1x" />
+              <h4>Projects</h4>
+            </div>
+          </NavLink>
         </li>
         <li>
-          <Link to="/Contact">
-            <FontAwesomeIcon icon={faEnvelope} size="2x" />
-          </Link>
+          <NavLink
+            className="icon"
+            id="Contact"
+            to="/Contact"
+            activeStyle={selected4}
+          >
+            <div className="content-wrapper">
+              <FontAwesomeIcon className="icon" icon={faEnvelope} size="1x" />
+              <h4>Contact</h4>
+            </div>
+          </NavLink>
         </li>
       </ul>
     </StyledNav>
   );
 };
 
-const StyledNav = styled.div`
-  background: black;
-  width: 5rem;
-  height: 100vh;
-  position: fixed;
+// Styling
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+const selected1 = {
+  background: "#161616",
+  borderRadius: "20em",
+  color: "#fcfd01",
+};
+const selected2 = {
+  background: "#161616",
+  borderRadius: "20em",
+  color: "#01fffc",
+};
+const selected3 = {
+  background: "#161616",
+  borderRadius: "20em",
+  color: "#00fe00",
+};
+const selected4 = {
+  background: "#161616",
+  borderRadius: "20em",
+  color: "#ff02fb",
+};
+
+const StyledNav = styled.nav`
+  min-height: 8vh;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background: #1e1e1e;
+  transition: 200ms ease;
+
+  #logo {
+    font-size: 2rem;
+    font-weight: lighter;
   }
 
-  li a {
+  ul {
     display: flex;
-    align-items: center;
-    height: 5rem;
+    list-style: none;
+  }
+
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+  }
+
+  a {
     color: white;
+    filter: greyscale(100%) opacity(0.7);
     text-decoration: none;
+    display: flex;
+    padding: 16px 16px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    .icon {
+      margin-right: 0.5em;
+    }
+  }
+
+  li:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1);
+    a {
+      background: #161616;
+      border-radius: 20em;
+      color: #23d997;
+    }
+    #Home {
+      color: #fcfd01;
+    }
+    #AboutMe {
+      color: #01fffc;
+    }
+    #Projects {
+      color: #00fe00;
+    }
+    #Contact {
+      color: #ff02fb;
+    }
   }
 `;
 
