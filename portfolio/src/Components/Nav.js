@@ -1,6 +1,6 @@
 // Dependencies
 import styled from "styled-components";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -8,12 +8,8 @@ import {
   faCode,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 
 const Nav = () => {
-  const { pathname } = useLocation();
-
   return (
     <StyledNav>
       <h1>
@@ -109,7 +105,7 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 6rem;
-  background: #1e1e1e;
+  background: #1d1d1d;
   transition: 200ms ease;
 
   #logo {

@@ -10,31 +10,35 @@ import Contact from "./Pages/Contact";
 
 // Dependencies
 import styled from "styled-components";
-
+// Animation
+import { AnimatePresence } from "framer-motion";
 // Router
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <MainWrapper>
-        <Switch>
-          <Route path="/Home" exact>
-            <Home />
-          </Route>
-          <Route path="/AboutMe" exact>
-            <AboutMe />
-          </Route>
-          <Route path="/Projects">
-            <Projects />
-          </Route>
-          <Route path="/Contact" exact>
-            <Contact />
-          </Route>
-        </Switch>
-      </MainWrapper>
+      <AnimatePresence exitBeforeEnter>
+        <MainWrapper>
+          <Switch location={location} key={location.pathname}>
+            <Route path="/Home" exact>
+              <Home />
+            </Route>
+            <Route path="/AboutMe" exact>
+              <AboutMe />
+            </Route>
+            <Route path="/Projects">
+              <Projects />
+            </Route>
+            <Route path="/Contact" exact>
+              <Contact />
+            </Route>
+          </Switch>
+        </MainWrapper>
+      </AnimatePresence>
     </div>
   );
 }

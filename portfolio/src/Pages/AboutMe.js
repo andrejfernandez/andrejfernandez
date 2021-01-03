@@ -1,9 +1,17 @@
 // Dependencies
 import styled from "styled-components";
+// Animation
+import { pageAnimation } from "../animation";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <StyledAboutMe>
+    <StyledAboutMe
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <h1>Andre Fernandez</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sunt
@@ -23,6 +31,6 @@ const AboutMe = () => {
   );
 };
 
-const StyledAboutMe = styled.div``;
+const StyledAboutMe = styled(motion.div)``;
 
 export default AboutMe;
