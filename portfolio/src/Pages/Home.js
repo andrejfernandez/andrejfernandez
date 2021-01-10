@@ -37,10 +37,11 @@ const Intro = styled(motion.div)`
   display: flex;
   padding: 1rem;
   width: 35%;
-  margin-top: 15rem;
+  margin-top: 10rem;
   //margin-left: auto;
   margin-right: auto;
   //margin: auto;
+  margin-bottom: 36rem;
 
   .ContentWrapper {
     position: fixed;
@@ -53,7 +54,7 @@ const Intro = styled(motion.div)`
     text-align: center;
     .top {
       h3 {
-        font-size: 10vh;
+        font-size: 8em;
         width: 100%;
         flex: 1;
       }
@@ -61,7 +62,7 @@ const Intro = styled(motion.div)`
     .bottom {
       h1 {
         color: #fcfd01;
-        font-size: 15vh;
+        font-size: 13em;
         width: 100%;
         flex: 2;
       }

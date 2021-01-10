@@ -47,14 +47,14 @@ const Footer = () => {
 };
 
 const StyledFooter = styled.div`
-  position: fixed;
   left: 0;
   bottom: 0;
   padding: 0;
   margin: auto;
+  margin-top: 2rem;
   height: 7vh;
-  width: 100%;
-
+  width: 20%;
+  background: #121212;
   .links {
     display: flex;
     list-style: none;

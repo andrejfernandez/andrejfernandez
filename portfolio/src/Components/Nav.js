@@ -19,7 +19,7 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <NavLink to="/Home" activeClassName="Home">
+          <NavLink to="/Home" activeClassName="Active">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faHome} size="1x" />
               <h4>Home</h4>
@@ -27,7 +27,7 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/AboutMe" activeClassName="AboutMe">
+          <NavLink to="/AboutMe" activeClassName="Active">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faUser} size="1x" />
               <h4>About Me</h4>
@@ -35,7 +35,7 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Projects" activeClassName="Projects">
+          <NavLink to="/Projects" activeClassName="Active">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faCode} size="1x" />
               <h4>Projects</h4>
@@ -43,7 +43,7 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Contact" activeClassName="Contact">
+          <NavLink to="/Contact" activeClassName="Active">
             <div className="content-wrapper">
               <FontAwesomeIcon className="icon" icon={faEnvelope} size="1x" />
               <h4>Contact</h4>
@@ -57,7 +57,7 @@ const Nav = () => {
 
 // Styling
 const StyledNav = styled.nav`
-  min-height: 8vh;
+  min-height: 3vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -107,34 +107,13 @@ const StyledNav = styled.nav`
   }
 
   // Active classes
-  .Home {
+  .Active {
     background: #161616;
     border-radius: 20em;
     .icon {
       color: #fcfd01;
     }
-  }
-  .AboutMe {
-    background: #161616;
-    border-radius: 20em;
-    .icon {
-      color: #01fffc;
-    }
-  }
-  .Projects {
-    background: #161616;
-    border-radius: 20em;
-    .icon {
-      color: #00fe00;
-    }
-  }
-  .Contact {
-    background: #161616;
-    border-radius: 20em;
-    .icon {
-      color: #ff02fb;
-    }
-  }
+
 `;
 
 export default Nav;

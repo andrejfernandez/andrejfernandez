@@ -49,4 +49,5 @@ export default App;
 
 const MainWrapper = styled.div`
   margin-top: 1rem;
+  overflow: hidden;
 `;
