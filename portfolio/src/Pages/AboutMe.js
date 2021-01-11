@@ -24,7 +24,6 @@ const AboutMe = () => {
           I spend a lot of my time coding either for class, or personal
           projects, and I very much enjoy learning a new language or framework.
         </p>
-
         <p>
           Below is a timeline showing relevant school and web courses that I
           have taken.
@@ -37,6 +36,7 @@ const AboutMe = () => {
 
 const StyledAboutMe = styled(motion.div)`
   margin-top: 2rem;
+  padding: 0 5vh 0 5vh;
 `;
 
 const StyledContent = styled.div`

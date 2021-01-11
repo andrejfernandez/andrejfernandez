@@ -57,12 +57,12 @@ const Nav = () => {
 
 // Styling
 const StyledNav = styled.nav`
-  min-height: 3vh;
+  min-height: 2vh;
   //display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   background: #1d1d1d;
   transition: 200ms ease;
 

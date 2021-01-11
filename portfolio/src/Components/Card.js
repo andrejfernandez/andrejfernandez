@@ -10,6 +10,7 @@ const Card = ({ imageUrl, title, desc, tags, link }) => {
       <div className="image-container">
         <img src={imageUrl} alt="" />
       </div>
+      <div className="line"></div>
       <div className="card-title">
         <h2>{title}</h2>
       </div>
@@ -34,12 +35,12 @@ const Card = ({ imageUrl, title, desc, tags, link }) => {
 };
 
 const StyledCard = styled.div`
-  height: 36rem;
-  width: 30rem;
+  height: 34rem;
+  width: 22rem;
   overflow: hidden;
   background: white;
   color: black;
-  margin: 2rem 3rem 2rem 3rem;
+  margin: 2rem 2rem 2rem 2rem;
   text-align: center;
   position: relative;
   border-radius: 1em;
@@ -52,6 +53,13 @@ const StyledCard = styled.div`
       width: 101%;
       border: none;
     }
+  }
+
+  .line {
+    height: 0.7rem;
+    margin-top: -0.4rem;
+    width: 100%;
+    background: #fcfd01;
   }
 
   .body {

@@ -32,18 +32,18 @@ const StyledHome = styled(motion.div)`
 const Intro = styled(motion.div)`
   padding: 0;
   margin: 0;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
   .ContentWrapper {
     width: 100%;
     text-align: center;
 
     h3 {
-      font-size: 8em;
+      font-size: 6em;
     }
     h1 {
       color: #fcfd01;
-      font-size: 13em;
+      font-size: 11em;
     }
   }
 `;

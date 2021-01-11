@@ -90,10 +90,13 @@ const StyledFooter = styled.div`
 `;
 
 const Link = styled.a`
-  /* :hover {
-    background: #161616;
-    border-radius: 20em;
-  } */
+  :hover {
+    .icon {
+      color: #fcfd01;
+    }
+    /* background: #161616;
+    border-radius: 20em; */
+  }
 `;
 
 export default Footer;

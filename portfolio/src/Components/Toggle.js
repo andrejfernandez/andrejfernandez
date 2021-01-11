@@ -8,9 +8,9 @@ const Toggle = ({ children, title, subtitle }) => {
       <h3 layout className="vertical-timeline-element-title">
         {title}
       </h3>
-      <h5 layout className="vertical-timeline-element-subtitle">
+      <h4 layout className="vertical-timeline-element-subtitle">
         {subtitle}
-      </h5>
+      </h4>
       {toggle ? children : ""}
     </ToggleStyle>
   );

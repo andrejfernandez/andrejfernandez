@@ -1,5 +1,16 @@
 const timelineElements = [
   {
+    id: 13,
+    title: "The Creative React and Redux Course",
+    location: "developedbyed.com",
+    description:
+      "Step by step from the beginning, understanding basic React concepts to creating complex web apps with Redux.",
+    tech:
+      "React, React Router, Styled Components, Framer Motion, Intersection Observer, Redux, Thunk",
+    date: "November 2020",
+    icon: "school",
+  },
+  {
     id: 12,
     title: "Software Development II",
     location: "Valencia College",

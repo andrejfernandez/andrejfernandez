@@ -6,7 +6,7 @@ const cardElements = [
   {
     id: 3,
     imageUrl: gameLibrary,
-    title: "React Video Game Database",
+    title: "Video Game Database",
     desc:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo velit officiis quisquam repellat ullam molestias maiores quo amet exercitationem a!",
     tags: "React, Redux, FramerMotion, StyledComponents",
@@ -16,7 +16,7 @@ const cardElements = [
   {
     id: 2,
     imageUrl: portfolio,
-    title: "React Portfolio Site",
+    title: "Portfolio Web Site",
     desc:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo velit officiis quisquam repellat ullam molestias maiores quo amet exercitationem a!",
     tags: "React, ReactDom, FramerMotion, StyledComponents",
@@ -26,7 +26,7 @@ const cardElements = [
   {
     id: 1,
     imageUrl: musicPlayer,
-    title: "React Music Player",
+    title: "Music Player",
     desc:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo velit officiis quisquam repellat ullam molestias maiores quo amet exercitationem a!",
     tags: "React",
