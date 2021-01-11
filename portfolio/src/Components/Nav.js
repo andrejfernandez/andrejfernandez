@@ -12,11 +12,11 @@ import {
 const Nav = () => {
   return (
     <StyledNav>
-      <h1>
+      {/* <h1>
         <NavLink id="logo" to="/">
           {""}
         </NavLink>
-      </h1>
+      </h1> */}
       <ul>
         <li>
           <NavLink to="/Home" activeClassName="Active">
@@ -58,11 +58,11 @@ const Nav = () => {
 // Styling
 const StyledNav = styled.nav`
   min-height: 3vh;
-  display: flex;
+  //display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 1rem;
   background: #1d1d1d;
   transition: 200ms ease;
 
@@ -73,7 +73,9 @@ const StyledNav = styled.nav`
 
   ul {
     display: flex;
+    justify-content: center;
     list-style: none;
+    margin: auto;
   }
 
   li {
@@ -113,7 +115,13 @@ const StyledNav = styled.nav`
     .icon {
       color: #fcfd01;
     }
+  }
 
+  @media only screen and (max-width: 1250px) {
+    h4 {
+      display: none;
+    }
+  }
 `;
 
 export default Nav;

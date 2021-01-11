@@ -52,8 +52,8 @@ const StyledFooter = styled.div`
   padding: 0;
   margin: auto;
   margin-top: 2rem;
-  height: 7vh;
-  width: 20%;
+  margin-bottom: 2rem;
+  width: 100%;
   background: #121212;
   .links {
     display: flex;
@@ -83,7 +83,7 @@ const StyledFooter = styled.div`
       }
     }
   }
-  :hover {
+  ul:hover {
     transition: all 0.1s ease-in-out;
     transform: scale(1.1);
   }

@@ -5,7 +5,7 @@ const timelineElements = [
     location: "Valencia College",
     description:
       "Enterprise-level applications are covered including distributed, and web-based systems using n-tier architecture.",
-    tech: "Java, JSX, mySQL, Hibernation, Apache Tomcat",
+    tech: "Java, JSP, mySQL, Hibernation, Apache Tomcat",
     date: "Fall 2020",
     icon: "school",
   },

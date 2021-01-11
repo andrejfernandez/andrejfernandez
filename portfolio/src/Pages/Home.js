@@ -14,15 +14,11 @@ const Home = () => {
     >
       <Intro>
         <div className="ContentWrapper">
-          <div className="top">
-            <motion.h3 variants={titleAnim}>
-              <span id="hi">Hi, </span>
-              <span>my name is</span>
-            </motion.h3>
-          </div>
-          <div className="bottom">
-            <motion.h1 variants={nameAnim}>Andre</motion.h1>
-          </div>
+          <motion.h3 variants={titleAnim}>
+            <span id="hi">Hi, </span>
+            <span>my name is</span>
+          </motion.h3>
+          <motion.h1 variants={nameAnim}>Andre</motion.h1>
         </div>
       </Intro>
     </StyledHome>
@@ -34,38 +30,20 @@ const StyledHome = styled(motion.div)`
 `;
 
 const Intro = styled(motion.div)`
-  display: flex;
-  padding: 1rem;
-  width: 35%;
+  padding: 0;
+  margin: 0;
   margin-top: 10rem;
-  //margin-left: auto;
-  margin-right: auto;
-  //margin: auto;
-  margin-bottom: 36rem;
-
+  margin-bottom: 10rem;
   .ContentWrapper {
-    position: fixed;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
     width: 100%;
     text-align: center;
-    .top {
-      h3 {
-        font-size: 8em;
-        width: 100%;
-        flex: 1;
-      }
+
+    h3 {
+      font-size: 8em;
     }
-    .bottom {
-      h1 {
-        color: #fcfd01;
-        font-size: 13em;
-        width: 100%;
-        flex: 2;
-      }
+    h1 {
+      color: #fcfd01;
+      font-size: 13em;
     }
   }
 `;

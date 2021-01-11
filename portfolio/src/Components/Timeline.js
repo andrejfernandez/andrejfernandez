@@ -5,25 +5,25 @@ import { faSchool, faBuilding } from "@fortawesome/free-solid-svg-icons";
 // Data
 import timelineElements from "../Data/timelineElements";
 
-// Plugin
+// Vertical Timeline
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import styled from "styled-components";
+
+// Components
 import Toggle from "./Toggle";
-import { motion, AnimateSharedLayout } from "framer-motion";
 
 // Style
 import "../Styles/timeline.css";
 
+import { ReactComponent as SchoolIcon } from "../Images/school.svg";
+
 const Timeline = () => {
   const schoolIconStyles = {
-    background: " #fcfd01",
-    color: "#000000",
-    display: "flex",
-    paddingRight: "1rem",
+    background: "#fcfd01",
+    color: "black",
   };
   const workIconStyles = { background: "#fcfd01" };
   return (
@@ -36,13 +36,7 @@ const Timeline = () => {
             date={element.date}
             dateClassName="date"
             iconStyle={isSchoolIcon ? schoolIconStyles : workIconStyles}
-            icon={
-              isSchoolIcon ? (
-                <FontAwesomeIcon icon={faSchool} size="2x" />
-              ) : (
-                <FontAwesomeIcon icon={faBuilding} size="2x" />
-              )
-            }
+            icon={<SchoolIcon />}
           >
             <Toggle title={element.title} subtitle={element.location}>
               <p id="description">{element.description}</p>
