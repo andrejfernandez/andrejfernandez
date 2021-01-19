@@ -1,8 +1,5 @@
 // Style
 import styled from "styled-components";
-import gameLibrary from "../Images/gameLibrary.png";
-import musicPlayer from "../Images/musicPlayer.png";
-import portfolio from "../Images/portfolio.png";
 
 const Card = ({ imageUrl, title, desc, tags, link }) => {
   return (
@@ -25,7 +22,7 @@ const Card = ({ imageUrl, title, desc, tags, link }) => {
 
       <div className="card-button">
         <button>
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <h3>View Code</h3>
           </a>
         </button>

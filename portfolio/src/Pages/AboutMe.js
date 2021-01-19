@@ -35,13 +35,12 @@ const AboutMe = () => {
 };
 
 const StyledAboutMe = styled(motion.div)`
-  margin-top: 2rem;
   padding: 0 5vh 0 5vh;
+  margin: 0rem 2rem 2rem 2rem;
 `;
 
 const StyledContent = styled.div`
   text-align: center;
-  margin: 0 2rem 2rem 2rem;
 
   h1 {
     margin-bottom: 1rem;

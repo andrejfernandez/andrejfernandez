@@ -1,7 +1,3 @@
-// Icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSchool, faBuilding } from "@fortawesome/free-solid-svg-icons";
-
 // Data
 import timelineElements from "../Data/timelineElements";
 
